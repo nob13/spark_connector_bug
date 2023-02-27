@@ -46,6 +46,6 @@ object SparkCassandra {
 
     println("Select")
     val selected = dataFrame.select(col("embeddeds.b"))
-    selected.show()
+    selected.show() // This is crashing
   }
 }
